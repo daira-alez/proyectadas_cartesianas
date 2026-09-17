@@ -73,8 +73,8 @@ def move():
     for target in targets:
         if not inside(target):
             return
-
-    ontimer(move, 50)
+    "Change velocity from 50 to 20"
+    ontimer(move, 20)
 
 
 setup(420, 420, 370, 0)
