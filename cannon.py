@@ -71,8 +71,10 @@ def move():
     draw()
 
     for target in targets:
-        if not inside(target):
-            return
+        if target.x < -200:
+            target.x = 200
+            target.y = randrange(-150,150)
+#The blue balls now reposition when leaving the screen
     "Velocity change from 50 to 20"
     ontimer(move, 20)
 
